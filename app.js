@@ -28,7 +28,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 //app.use('/', indexRouter);
 app.get('/', function(req, res){
-  logger.emit('fellow', {from: 'userA', to: 'uesrB'});
+  logger.emit('FLUENT!', {'FLUENT':'FLUENT'});
   //undefined();
   res.send('Fluent Test');
 })
